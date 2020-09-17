@@ -38,7 +38,7 @@
     morning = "06:00:00";
     noon = "12:00:00";
     afternoon = "14:00:00";
-    night = "21:00:00";
+    night = "18:00:00";
     if (CompareNowTime(night)) {
         text = "晚上好";
     } else if (CompareNowTime(afternoon)){
