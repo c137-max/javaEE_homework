@@ -7,7 +7,7 @@ public class TimeCompare {
 
     private static int Time2Int(String ftDate) {
         /**
-         *  å°†HH:mm:ssæ—¶é—´è½¬æˆç§’
+         *  ½«HH:mm:ssÊ±¼ä×ª³ÉÃë
          */
         String[] splitTime = ftDate.split(":");
         int h = Integer.parseInt(splitTime[0]);
@@ -18,7 +18,7 @@ public class TimeCompare {
 
     public static boolean CompareNowTime(Date cTime) {
         /**
-         * ä¸ŽçŽ°åœ¨çš„æ—¶é—´æ¯”è¾ƒï¼Œå¤§äºŽçŽ°åœ¨çš„æ—¶é—´å°±è¿”å›žture
+         * ÓëÏÖÔÚµÄÊ±¼ä±È½Ï£¬´óÓÚÏÖÔÚµÄÊ±¼ä¾Í·µ»Øture
          */
         Date date = new Date();
         SimpleDateFormat ft = new SimpleDateFormat("HH:mm:ss");
@@ -33,7 +33,7 @@ public class TimeCompare {
 
     public static boolean CompareTime(Date T1, Date T2) {
         /**
-         * ä¸¤ä¸ªæ—¥æœŸç›¸æ¯”è¾ƒè¿”å›ž T1 >= T2 ?
+         * Á½¸öÈÕÆÚÏà±È½Ï·µ»Ø T1 >= T2 ?
          */
         SimpleDateFormat ft = new SimpleDateFormat("HH:mm:ss");
         String t1 = ft.format(T1);

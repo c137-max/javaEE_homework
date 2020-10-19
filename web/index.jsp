@@ -12,6 +12,7 @@
   </head>
   <body>
   <li><a href="Hello.jsp">实验一</a></li>
-  <li><a href="Hello.jsp">实验二</a></li>
+  <li><a href="hello_struts2.jsp">实验二</a></li>
+  <li><a href="hello_struts3.jsp">实验二第二问</a></li>
   </body>
 </html>

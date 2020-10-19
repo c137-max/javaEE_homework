@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 指定 Struts2 配置文件的 DTD 信息 -->
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+<!-- Struts2配置文件的根元素 -->
+<struts>
+    <!-- Struts2的Action必须放在指定的包空间下定义 -->
+    <package name="com" namespace="/" extends="struts-default">
+        <!-- 定义 action，该 action 对应的类为 com.struts2.action.HelloWorldAction 类-->
+        <action name="helloWorld" class="com.struts2.action.HelloAction">
+            <!-- 定义处理结果和视图资源之间的映射关系 -->
+            <result name="success">/Hello/success.jsp</result>
+            <result name="error">/Hello/error.jsp</result>
+        </action>
+        <action name="hello" class="com.struts2.action.Hello2Action">
+            <!-- 定义处理结果和视图资源之间的映射关系 -->
+            <result name="success">/Hello/success.jsp</result>
+            <result name="error">/Hello/error.jsp</result>
+        </action>
+    </package>
+</struts>
